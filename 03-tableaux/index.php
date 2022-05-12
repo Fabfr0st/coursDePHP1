@@ -29,16 +29,22 @@ for ($i = 0; $i < count($fruits); $i++) {
 $html = substr_replace($html, '.', -2);
 echo $html; */
 
-foreach ($fruits as $fruit => $fruitCourant) {
+/* foreach ($fruits as $fruit => $fruitCourant) {
     echo "<br>$fruitCourant";
-}
+} */
+
 
 echo '<hr>MOYENNE';
 $tabNotes = [12, 5, 16, 7];
 $moy = array_sum($tabNotes) / count($tabNotes);
 echo "<br>$moy";
 
-
+echo '<hr>Nombre à remplir avec for<br>';
+$nombres = [];
+for ($i=34; $i <= 78; $i++) { 
+    $nombres[] = $i ;
+}
+print_r($nombres);
 
 
 
