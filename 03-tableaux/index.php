@@ -10,7 +10,7 @@ print_r($tableau);
 $tableau[] = "Janvier";
 // print_r($tableau);
 print_r($tableau[5]);
-
+echo '<hr>MOYENNE';
 $tabNotes = [12,5,16,7];
 $moy = array_sum($tabNotes)/count($tabNotes);
 echo "<br>$moy";
