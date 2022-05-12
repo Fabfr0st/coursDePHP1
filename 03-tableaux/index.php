@@ -77,6 +77,8 @@ $html .= "</ul>";
 echo $html;
 
 
+$notesAges = array_merge($notes, $ages);
+var_dump($notesAges);
 
 
 
