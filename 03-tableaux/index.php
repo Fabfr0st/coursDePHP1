@@ -36,8 +36,23 @@ echo $html; */
 $fruits = ['banane' => 'jaune', 'kiwi' => 'vert', 'cerise' => 'rouge'];
 var_dump($fruits);
 echo "La couleur d'une cerise est " . $fruits['cerise'] . '.<br>';
-$age = ['Thomas' => 24, 'Paul' => 42, 'Jack' => 5];
-var_dump($age);
+$ages = ['Thomas' => 24, 'Paul' => 42, 'Jack' => 5];
+$ages['Claire'] = 18;
+$ages['Claire'] = 22;
+var_dump($ages);
+$chaine = implode('-', $ages); //implode assemble les élém du tableau en string
+var_dump($chaine);
+
+$ages2 = "45,14,5,14,78,56,91,42,36";
+$ages2 = explode(',',$ages2); //explode dissocie les élém dans une string pour en faire un tableau
+var_dump($ages2);
+$html="<ul>";
+foreach ($ages as $personne => $age) {
+    // echo "$personne a $age ans.<br>";
+    $html .= "<li>$personne a $age ans.</li>";
+}
+$html.="</ul>";
+echo $html;
 /* echo '<hr>MOYENNE';
 $tabNotes = [12, 5, 16, 7];
 $moy = array_sum($tabNotes) / count($tabNotes);
