@@ -86,7 +86,7 @@ arsort();
 ksort();
 krsort(); */
 
-$planetes = ['Mars','Terre','Pluton','Vénus','Jupiter','Uranus','Mercure'];
+/* $planetes = ['Mars','Terre','Pluton','Vénus','Jupiter','Uranus','Mercure'];
 print_r($planetes);
 echo '<hr>';
 krsort($planetes);
@@ -98,5 +98,26 @@ print_r($notes);
 echo '<hr>';
 krsort($notes);
 print_r($notes);
+ */
+
+$mois = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
+echo $mois[4];
+echo '<br>';
+echo $mois[10];
+echo '<br>';
+$mois[3] = strtoupper($mois[3]);
+echo $mois[3];
+
+echo '<hr>';
+
+$region = [76 => 'Seine-Maritime', 27 => 'Eure', 14 => 'Calvados', 61 => 'Orne', 50 => 'Manche'];
+echo $region[27];
+echo '<br>';
+$region[29] = 'Finistère';
+$html='';
+foreach ($region as $codeDep => $nomDep) {
+    $html.= "<p>Le $nomDep possède le code postal suivant :  $codeDep";
+}
+echo $html;
 
 echo '</pre>';
