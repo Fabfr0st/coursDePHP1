@@ -21,7 +21,7 @@ $tableau = array_merge($tableau, $tableau2);
     print_r($tableau[$i]);
 } */
 
-$fruits = ['Orange', 'Durian', 'Grenade', 'Banane', 'Mangue', 'Kiwi', 'Pomme', 'Fraise', 'Framboise', 'Cerise','Mandarine','Clementine','Raisin','Avocat','Groseille','Mûre','Melon','Pastèque','Citrouille','Tomate','Olive','Date','Courgette','Aubergine'];
+$fruits = ['Orange', 'Durian', 'Grenade', 'Banane', 'Mangue', 'Kiwi', 'Pomme', 'Fraise', 'Framboise', 'Cerise', 'Mandarine', 'Clementine', 'Raisin', 'Avocat', 'Groseille', 'Mûre', 'Melon', 'Pastèque', 'Citrouille', 'Tomate', 'Olive', 'Date', 'Courgette', 'Aubergine'];
 /* $html = '';
 for ($i = 0; $i < count($fruits); $i++) {
     $html .= "$fruits[$i], ";
@@ -33,8 +33,12 @@ echo $html; */
     echo "<br>$fruitCourant";
 } */
 
-
-echo '<hr>MOYENNE';
+$fruits = ['banane' => 'jaune', 'kiwi' => 'vert', 'cerise' => 'rouge'];
+var_dump($fruits);
+echo "La couleur d'une cerise est " . $fruits['cerise'] . '.<br>';
+$age = ['Thomas' => 24, 'Paul' => 42, 'Jack' => 5];
+var_dump($age);
+/* echo '<hr>MOYENNE';
 $tabNotes = [12, 5, 16, 7];
 $moy = array_sum($tabNotes) / count($tabNotes);
 echo "<br>$moy";
@@ -44,7 +48,7 @@ $nombres = [];
 for ($i=34; $i <= 78; $i++) { 
     $nombres[] = $i ;
 }
-print_r($nombres);
+print_r($nombres); */
 
 
 
