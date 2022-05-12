@@ -12,9 +12,22 @@ $tableau[] = "Janvier";
 // print_r($tableau[5]);
 count($tableau);
 array_push($tableau, 'valeur1(a_p)', 'valeur2(a_p)', 'etc(a_p)');
-$tableau2 = ['Cabriolet', 5, 'couleur'=>'rouge'];
+$tableau2 = ['Cabriolet(a_m)', 5, 'rouge(a_m)'];
 $tableau = array_merge($tableau, $tableau2);
-print_r($tableau);
+// print_r($tableau);
+
+/* for ($i = 0; $i < count($tableau); $i++) {
+    echo "<br>";
+    print_r($tableau[$i]);
+} */
+
+$fruits = ['Orange', 'Durian', 'Grenade', 'Banane', 'Mangue', 'Kiwi', 'Pomme', 'Fraise', 'Framboise', 'Cerise'];
+$html = '';
+for ($i = 0; $i < count($fruits); $i++) {
+    $html .= "$fruits[$i], ";
+}
+$html = substr_replace($html, '.', -2);
+echo $html;
 
 echo '<hr>MOYENNE';
 $tabNotes = [12, 5, 16, 7];
