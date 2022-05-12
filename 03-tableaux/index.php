@@ -21,13 +21,17 @@ $tableau = array_merge($tableau, $tableau2);
     print_r($tableau[$i]);
 } */
 
-$fruits = ['Orange', 'Durian', 'Grenade', 'Banane', 'Mangue', 'Kiwi', 'Pomme', 'Fraise', 'Framboise', 'Cerise'];
-$html = '';
+$fruits = ['Orange', 'Durian', 'Grenade', 'Banane', 'Mangue', 'Kiwi', 'Pomme', 'Fraise', 'Framboise', 'Cerise','Mandarine','Clementine','Raisin','Avocat','Groseille','Mûre','Melon','Pastèque','Citrouille','Tomate','Olive','Date','Courgette','Aubergine'];
+/* $html = '';
 for ($i = 0; $i < count($fruits); $i++) {
     $html .= "$fruits[$i], ";
 }
 $html = substr_replace($html, '.', -2);
-echo $html;
+echo $html; */
+
+foreach ($fruits as $fruit => $fruitCourant) {
+    echo "<br>$fruitCourant";
+}
 
 echo '<hr>MOYENNE';
 $tabNotes = [12, 5, 16, 7];
