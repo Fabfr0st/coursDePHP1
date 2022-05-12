@@ -67,10 +67,10 @@ for ($i=34; $i <= 78; $i++) {
 }
 print_r($nombres); */
 
-echo '<hr>Notes et élèves';
-$html = "<ul>";
+/* echo '<hr>Notes et élèves';
+$html = "<ul>";*/
 $notes = ['Rachelle' => 15, 'Jean' => 8, 'Elisa' => 20, 'Allan' => 0, 'Daphne' => 17];
-foreach ($notes as $eleve => $note) {
+/*foreach ($notes as $eleve => $note) {
     $html .= "<li>$eleve a obtenu $note/20.</li>";
 }
 $html .= "</ul>";
@@ -78,8 +78,25 @@ echo $html;
 
 
 $notesAges = array_merge($notes, $ages);
-var_dump($notesAges);
+var_dump($notesAges); */
 
+/* asort();
+sort();
+arsort();
+ksort();
+krsort(); */
 
+$planetes = ['Mars','Terre','Pluton','Vénus','Jupiter','Uranus','Mercure'];
+print_r($planetes);
+echo '<hr>';
+krsort($planetes);
+print_r($planetes);
+
+echo '<hr>';
+
+print_r($notes);
+echo '<hr>';
+krsort($notes);
+print_r($notes);
 
 echo '</pre>';
