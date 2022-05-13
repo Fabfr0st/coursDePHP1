@@ -101,23 +101,39 @@ print_r($notes);
  */
 
 $mois = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
-echo $mois[4];
+/* echo $mois[4];
 echo '<br>';
 echo $mois[10];
 echo '<br>';
 $mois[3] = strtoupper($mois[3]);
 echo $mois[3];
 
-echo '<hr>';
+echo '<hr>'; */
 
 $region = [76 => 'Seine-Maritime', 27 => 'Eure', 14 => 'Calvados', 61 => 'Orne', 50 => 'Manche'];
-echo $region[27];
+/* echo $region[27];
 echo '<br>';
 $region[29] = 'Finistère';
 $html='';
 foreach ($region as $codeDep => $nomDep) {
     $html.= "<p>Le $nomDep possède le code postal suivant :  $codeDep";
 }
-echo $html;
+echo $html; */
+
+// $tab = [
+//     'voiture' => 'ford',
+//     'nombre' => [1,2,3,4],
+//     'planete' => ['mars','terre']
+// ];
+
+$tab = [];
+$tab[] = ['A','B','C'];
+$tab[] = ['Q','R','T'];
+$tab[] = ['E','U','P','I'];
+print_r($tab);
+echo '<hr>';
+// Ecrire le mot CEPPIC
+echo $tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2];
+
 
 echo '</pre>';
