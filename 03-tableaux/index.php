@@ -135,6 +135,28 @@ echo '<hr>';
 // Ecrire le mot CEPPIC
 echo $tab[0][2] . $tab[2][0] . $tab[2][2] . $tab[2][2] . $tab[2][3] . $tab[0][2] . '<br>';
 
+$souhait = "CEPPIC";
+$souhait = str_split($souhait, 1);
+
+$html = '';
+$i = 0;
+while ($i < count($souhait)) {
+    foreach ($tab as $key => $value) {
+        $tabCourant = $tab[$key];
+        // var_dump($tabCourant);
+        foreach ($tabCourant as $key => $value) {
+            echo "value: $value souhaitée: $souhait[$i]<br>";
+            if ($value == $souhait[$i]) {
+                $html .= $value;
+                break;
+                // echo $souhait[$i];
+            }
+        }
+    }
+    $i++;
+}
+echo "<br>$html<br>";
+
 $tab2 = [
     [0,1],
     [
