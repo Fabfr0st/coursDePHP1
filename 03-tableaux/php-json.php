@@ -1,7 +1,7 @@
 <?php
 $pers1 = [
     'prenom' => 'Simon',
-    'nom' => 'Jérémi',
+    'nom' => 'Jeremi',
     'email' => 's.jeremi@email.fr'
 ];
 
@@ -24,5 +24,7 @@ print_r($people);
 echo $people[2]['email'];
 echo PHP_EOL;
 echo $people[2]['prenom'];
+echo PHP_EOL;
+echo json_encode($people);
 
 echo '</pre>';
