@@ -20,4 +20,9 @@ $people = [
 ];
 echo '<pre>';
 print_r($people);
+
+echo $people[2]['email'];
+echo PHP_EOL;
+echo $people[2]['prenom'];
+
 echo '</pre>';
