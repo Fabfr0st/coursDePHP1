@@ -3,4 +3,5 @@
 ### Contenu du cours
 - Syntaxe
 - Variables
-- Tableaux
+- Tableaux simples
+- Tableaux Multidimensionnels
