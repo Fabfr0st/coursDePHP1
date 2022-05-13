@@ -127,13 +127,21 @@ echo $html; */
 // ];
 
 $tab = [];
-$tab[] = ['A','B','C'];
-$tab[] = ['Q','R','T'];
-$tab[] = ['E','U','P','I'];
+$tab[] = ['A', 'B', 'C'];
+$tab[] = ['Q', 'R', 'T'];
+$tab[] = ['E', 'U', 'P', 'I'];
 print_r($tab);
 echo '<hr>';
 // Ecrire le mot CEPPIC
-echo $tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2];
+echo $tab[0][2] . $tab[2][0] . $tab[2][2] . $tab[2][2] . $tab[2][3] . $tab[0][2] . '<br>';
 
+$tab2 = [
+    [0,1],
+    [
+        2,
+        [2,3]
+    ]
+    ];
+echo $tab2[1][1][1];
 
 echo '</pre>';
