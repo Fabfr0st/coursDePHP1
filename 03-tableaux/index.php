@@ -130,13 +130,13 @@ $tab = [];
 $tab[] = ['A', 'B', 'C'];
 $tab[] = ['Q', 'R', 'T'];
 $tab[] = ['E', 'U', 'P', 'I'];
-print_r($tab);
-echo '<hr>';
+/* print_r($tab);
+echo '<hr>'; */
 // Ecrire le mot CEPPIC
-echo $tab[0][2] . $tab[2][0] . $tab[2][2] . $tab[2][2] . $tab[2][3] . $tab[0][2] . '<br>';
+// echo $tab[0][2] . $tab[2][0] . $tab[2][2] . $tab[2][2] . $tab[2][3] . $tab[0][2] . '<br>';
 
 $souhait = "CEPPIC";
-$souhait = str_split($souhait, 1);
+/* $souhait = str_split($souhait, 1);
 
 $html = '';
 $i = 0;
@@ -148,22 +148,51 @@ while ($i < count($souhait)) {
             echo "value: $value souhaitée: $souhait[$i]<br>";
             if ($value == $souhait[$i]) {
                 $html .= $value;
-                break;
+                break 2;
                 // echo $souhait[$i];
             }
         }
     }
     $i++;
 }
-echo "<br>$html<br>";
+echo "<br>$html<br>"; */
 
 $tab2 = [
-    [0,1],
+    [0, 1],
     [
         2,
-        [2,3]
+        [2, 3]
     ]
-    ];
-echo $tab2[1][1][1];
+];
+// echo $tab2[1][1][1];
+
+$produits = [
+    ['nom' => 'tablette graphique', 'prix' => 400],
+    ['nom' => 'velo', 'prix' => 230],
+    ['nom' => 'crêpe nutella', 'prix' => 2],
+    ['nom' => 'manette', 'prix' => 80],
+    ['nom' => 'souris', 'prix' => 130]
+];
+// print_r($produits);
+
 
 echo '</pre>';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <?php
+            foreach ($produits as $produit) {
+                echo "<li><h3>".$produit['nom']."</h3><p>".$produit['prix']."€</p></li>";
+            }
+        ?>
+    </ul>
+</body>
+</html>
