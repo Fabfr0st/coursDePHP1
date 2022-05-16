@@ -109,3 +109,11 @@ if (isset($var2)) {
 else {
     echo "var2 n'est pas set";
 }
+
+echo '<br>';
+$articles = [1,5,7];
+if(!empty($articles[0])) {
+    var_dump($articles[0]);
+} else {
+    echo "Il n'y a pas d'articles !";
+}   
