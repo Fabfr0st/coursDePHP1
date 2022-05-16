@@ -120,8 +120,8 @@ if(!empty($articles[0])) {
 
 // Operateur ternaire
 // condition ? true : false
-echo !empty($articles[0]) ? $articles[0] : "Il n'y a pas d'articles";
+/* echo !empty($articles[0]) ? $articles[0] : "Il n'y a pas d'articles";
 
 $premierArticle = !empty($articles[0]) ? $articles[0] : "Il n'y a pas d'articles";
 $premierArticle = !empty($articles[0]) ? $articles[0] : null;
-echo $premierArticle;
+echo $premierArticle; */
