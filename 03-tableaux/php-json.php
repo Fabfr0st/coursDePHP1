@@ -26,5 +26,16 @@ echo PHP_EOL;
 echo $people[2]['prenom'];
 echo PHP_EOL;
 echo json_encode($people);
+echo PHP_EOL;
+$json_obj = '{
+    "nom" : "Karamazov",
+    "prenom": "Serge",
+    "email" : "s.karamazov@email.fr"
+}';
+print_r($json_obj);
+echo '<hr>';
+$json_array_php = json_decode($json_obj);
+print_r($json_array_php);
+
 
 echo '</pre>';
