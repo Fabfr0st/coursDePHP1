@@ -12,7 +12,7 @@ while ($j <= 10) {
 // Avec une boucle while afficher toutes les années de 1970 à aujourd'hui dans une liste ul
 // Afficher le nombre de jour depuis 1970
 // Travailler dans une branche annees
-?>
+/* ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,4 +38,16 @@ while ($j <= 10) {
 <li>Le nombre de jour depuis 1970 est : <strong><?=$nbJour - 365;?></strong></li>
 </ul>
 </body>
-</html>
+</html> */
+// ==========
+// Do while
+// ==========
+$y = 0;
+$k = 10;
+do {
+    echo "Nombre : $y<br>";
+    $y++;
+    $k--;
+} while ($y >= 10);
+echo '<br>';
+echo $k;
