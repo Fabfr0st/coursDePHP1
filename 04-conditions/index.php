@@ -91,7 +91,7 @@ var_dump($return_value); */
 $var1 = 2;
 $var2; //0 et false sont considérés comme vides
 
-if (empty($var1)) { //empty retourne un booléen 0->false->vide
+/* if (empty($var1)) { //empty retourne un booléen 0->false->vide
     echo "var1 est vide";
 }
 echo '<br>';
@@ -108,12 +108,20 @@ if (isset($var2)) {
 }
 else {
     echo "var2 n'est pas set";
-}
+} */
 
 echo '<br>';
-$articles = [1,5,7];
+/* $articles = [1,5,7];
 if(!empty($articles[0])) {
     var_dump($articles[0]);
 } else {
     echo "Il n'y a pas d'articles !";
-}   
+}    */
+
+// Operateur ternaire
+// condition ? true : false
+echo !empty($articles[0]) ? $articles[0] : "Il n'y a pas d'articles";
+
+$premierArticle = !empty($articles[0]) ? $articles[0] : "Il n'y a pas d'articles";
+$premierArticle = !empty($articles[0]) ? $articles[0] : null;
+echo $premierArticle;
