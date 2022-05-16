@@ -42,7 +42,7 @@ while ($j <= 10) {
 // ==========
 // Do while
 // ==========
-$y = 0;
+/* $y = 0;
 $k = 10;
 do {
     echo "Nombre : $y<br>";
@@ -50,4 +50,12 @@ do {
     $k--;
 } while ($y >= 10);
 echo '<br>';
-echo $k;
+echo $k; */
+
+//=========
+// foreach
+//=========
+$tabs = [1,2,3,4,5,6];
+foreach($tabs as $tab) {
+    echo 'Nombre : ' . $tab . '<br>';
+}
