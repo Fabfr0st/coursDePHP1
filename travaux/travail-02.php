@@ -20,3 +20,9 @@ Travail-02 :
 
 Vous trouverez une capture du resultat attendu.
  */
+$fichier = file_get_contents("./persons.json");
+$json = json_decode($fichier,true);
+// echo "<pre>";
+// var_dump($json);
+// echo "</pre>";
+echo "<h3>".$json[2]["friends"][1]["name"]."</h3>";
