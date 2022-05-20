@@ -26,3 +26,4 @@ $json = json_decode($fichier,true);
 // var_dump($json);
 // echo "</pre>";
 echo "<h3>".$json[2]["friends"][1]["name"]."</h3>";
+echo "<p>La couleur des yeux de Ball Shaffer est : <strong>".$json[1]["eyeColor"]."</strong></p>";
