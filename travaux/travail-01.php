@@ -1,7 +1,9 @@
 <style>
-table , th , td {
-	border:solid 1px black;
-}	
+    table,
+    th,
+    td {
+        border: solid 1px black;
+    }
 </style>
 <?php
 /*
@@ -26,10 +28,10 @@ echo "<table>
             <td>°F</td>
         </tr>";
 foreach ($tempsC as $tempC) {
-    $tempF = round(($tempC * 1.8) + 32,PHP_ROUND_HALF_UP);
+    $tempF = round(($tempC * 1.8) + 32, PHP_ROUND_HALF_UP);
     $tempsF[] = $tempF;
 }
-for ($i=0; $i < count($tempsC); $i++) { 
-    echo "<tr><td>".$tempsC[$i]."</td><td>".$tempsF[$i]."</td></tr>";
+for ($i = 0; $i < count($tempsC); $i++) {
+    echo "<tr><td>" . $tempsC[$i] . "</td><td>" . $tempsF[$i] . "</td></tr>";
 }
 echo "</table>";
