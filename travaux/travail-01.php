@@ -1,3 +1,8 @@
+<style>
+table , th , td {
+	border:solid 1px black;
+}	
+</style>
 <?php
 /*
 Travail-01 :
