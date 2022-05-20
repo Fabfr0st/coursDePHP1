@@ -33,6 +33,7 @@ foreach ($json as $personne) {
     echo '<img src="' . $personne['picture'] . '"><br>';
     echo 'Nom: ' . $personne['name'] . '<br>';
     echo 'Age: ' . $personne['age'] . '<br>';
+    echo 'Couleur des yeux : ' . $personne['eyeColor'] . '<br>';
     echo 'Email: ' . $personne['email'] . '<br>';
     echo 'Fruit Favori: ' . $personne['favoriteFruit'] . '<br>';
     if ($personne['isActive']) {
