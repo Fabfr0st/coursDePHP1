@@ -10,4 +10,20 @@
 * yy : impaire
 etc ...
  */
- 
+$nombres = [27, 15, 34, 379, 248, 5643, 81, 211, 999, 142, 300, 572];
+$html = '';
+foreach ($nombres as $nombre) {
+    $html .= "$nombre, ";
+}
+$html = substr($html,0,-2);
+echo $html;
+echo " sont des nombres : ";
+echo "<ul>";
+foreach ($nombres as $nombre) {
+    if ($nombre % 2 == 0) {
+        echo "<li>$nombre : pair</li>";
+    } else {
+        echo "<li>$nombre : impair</li>";
+    }
+}
+echo "</ul>";
