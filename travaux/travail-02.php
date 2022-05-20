@@ -38,7 +38,7 @@ foreach ($json as $personne) {
     if ($personne['isActive']) {
         echo "ACTIF<br>";
     }
-    echo 'Tags: ';   
+    echo 'Tags: ';
     foreach ($personne['tags'] as $tag) {
         $tags .= "$tag, ";
     };
