@@ -15,7 +15,7 @@ $html = '';
 foreach ($nombres as $nombre) {
     $html .= "$nombre, ";
 }
-$html = substr($html,0,-2);
+$html = substr($html, 0, -2);
 echo $html;
 echo " sont des nombres : ";
 echo "<ul>";
