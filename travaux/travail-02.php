@@ -21,28 +21,27 @@ Travail-02 :
 Vous trouverez une capture du resultat attendu.
  */
 $fichier = file_get_contents("./persons.json");
-$json = json_decode($fichier,true);
+$json = json_decode($fichier, true);
 // echo "<pre>";
 // var_dump($json);
 // echo "</pre>";
-echo "<h3>".$json[2]["friends"][1]["name"]."</h3>";
-echo "<p>La couleur des yeux de Ball Shaffer est : <strong>".$json[1]["eyeColor"]."</strong></p>";
+echo "<h3>" . $json[2]["friends"][1]["name"] . "</h3>";
+echo "<p>La couleur des yeux de Ball Shaffer est : <strong>" . $json[1]["eyeColor"] . "</strong></p>";
 echo '<article>';
-foreach($json as $personne){
-		$tags = '';
-		echo '<img src="' . $personne['picture'] . '"><br>';
-		echo 'Nom: '. $personne['name'] . '<br>';
-		echo 'Age: '. $personne['age'] . '<br>';
-		echo 'Email: '. $personne['email'] . '<br>';
-		echo 'Fruit Favori: '. $personne['favoriteFruit'] . '<br>';
-		echo 'Tags: ';
+foreach ($json as $personne) {
+    $tags = '';
+    echo '<img src="' . $personne['picture'] . '"><br>';
+    echo 'Nom: ' . $personne['name'] . '<br>';
+    echo 'Age: ' . $personne['age'] . '<br>';
+    echo 'Email: ' . $personne['email'] . '<br>';
+    echo 'Fruit Favori: ' . $personne['favoriteFruit'] . '<br>';
+    echo 'Tags: ';
 
-		foreach($personne['tags'] as $tag){
-			$tags .= "$tag, ";
-		};
-        $tags = substr($tags,0,-2);
-        echo $tags;
-		echo '<hr>';
-
-    }
+    foreach ($personne['tags'] as $tag) {
+        $tags .= "$tag, ";
+    };
+    $tags = substr($tags, 0, -2);
+    echo $tags;
+    echo '<hr>';
+}
 echo '</article>';
