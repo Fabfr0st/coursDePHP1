@@ -55,7 +55,56 @@ echo $k; */
 //=========
 // foreach
 //=========
-$tabs = [1,2,3,4,5,6];
-foreach($tabs as $tab) {
+$tabs = [1, 2, 3, 4, 5, 6];
+foreach ($tabs as $tab) {
     echo 'Nombre : ' . $tab . '<br>';
 }
+
+$html = "<h1>For div par 7</h1>";
+$html .= "<ul>";
+for ($i = -128; $i <= 1257; $i++) {
+
+    if ($i % 7 === 0) {
+        $html .= "<li>";
+        $html .= $i;
+        $html .= "</li>";
+    }
+}
+$html .= "</ul>";
+echo $html;
+
+$while = "<h1>While div par 7</h1>";
+$while .= "<ul>";
+$a = -128;
+while ($a <= 1257) {
+    if ($a % 7 === 0) {
+        $while .= "<li>";
+        $while .= $a;
+        $while .= "</li>";
+    }
+    $a++;
+}
+$while .= "</ul>";
+echo $while;
+
+
+
+$premier = "<h1>Nombres premiers</h1>";
+$premier .= "<ul>";
+
+for ($i = 1; $i <= 50; $i++) {
+    $n = 0;
+
+    for ($j = 2; $j < ($i / 2 + 1); $j++) {
+        if ($i % $j === 0) {
+            $n++;
+            break;
+        }
+    }
+
+    if ($n === 0) {
+        $premier .= "<li>" . $i . "</li>";
+    }
+}
+$premier .= "</ul>";
+echo $premier;
