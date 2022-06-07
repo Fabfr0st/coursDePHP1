@@ -1,10 +1,12 @@
 <?php
 
-function afficherMessage()
+function afficherMessage($prenom)
 {
-    echo "<p>message</p>";
+    $resultat = "<p>Bonjour $prenom</p>";
+    return $resultat;
 }
 
-afficherMessage();
-afficherMessage();
-afficherMessage();
+$display = afficherMessage("Michel");
+echo $display;
+
+
